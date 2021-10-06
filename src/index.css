@@ -1,0 +1,116 @@
+:root {
+    --bg-color: #22223B;
+    --fg-color: #4A4E69;
+    --primary-color: #f2e9e4;
+    --secondary-color: #9a8c98;
+    --accent-color: #c9ada7;
+}
+
+
+
+body {
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    font-family: 'open sans';
+    font-weight: 400;
+  
+
+}
+
+#content {
+    background-color: var(--fg-color);
+    width: 450px;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content h1 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 3em;
+    
+}
+
+#task-list {
+    width: 90%;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+}
+
+.task {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    border:  2px solid var(--accent-color);
+    padding: 10px 10px 10px 10px;
+}
+
+.task:hover {
+    border-color: var(--primary-color);
+}
+
+.task:hover > .task-checkmark {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+     cursor: pointer;
+}
+
+.task-checkmark {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border-style: hidden;
+    background-color: var(--secondary-color);
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    color: var(--primary-color);
+}
+
+.task-text {
+    font-size: 1.5em;
+    line-height: 5px;
+    flex-grow: 1;
+}
+
+#task-submit {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#task-submit-text {
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    border-style: hidden;
+    margin-right: 20px;
+    padding-left: 20px;
+    line-height: 1.5em;
+    font-size: 1.5em;
+}
+
+#task-submit-button {
+    background-color: var(--accent-color);
+    width: 70px;
+    border-radius: 20px;
+    border-style: hidden;
+    font-size: 1.5em;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+#task-submit-button:hover {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+}
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+</head>
+
+<body onload="onPageLoad()">
+    
+    <div id="content">
+        <h1>My Todo List</h1>
+        <div id="task-list">
+           
+        </div>
+        <script src="./index.js"></script>
+        <script src="./all.js"></script>
+        <form id="task-submit" onsubmit="onTaskSubmit()">
+            <input id="task-submit-text" name="submitted-name" autocomplete="name">
+            <button id="task-submit-button">
+                <p class="fas fa-chevron-up"></p>
+            </button>
+        </form>
+    </div>
+</body>
+
+</html>
